@@ -7,10 +7,10 @@ catButton.addEventListener('click', function(){
 
   // TODO: assign `newCat a value by creating a new list item DOM element
 
-  const newCat;
+  const newCat = document.createElement('li');
 
   // TODO: assign the list item's text to be 'Cat' or the name of a cat you know.
-
+  newCat.textContent = 'Cat';
   const cats = document.getElementById('cats');
 
   cats.appendChild(newCat);
@@ -23,19 +23,24 @@ dogButton.addEventListener('click', function () {
 
   // TODO: assign `dogs` a value by selecting the second unordered list by its id
  
- const dogs;
+ const dogs = document.getElementById('dogs') 
 
   // TODO: append the newly created list item to the dogs list
+  dogs.appendChild(newDog)
 });
 
 const sheepButton = document.getElementById('make-sheep');
 
 // TODO: add an event listener to the sheepButton that calls `handleMakingSheep` when clicked
-
 function handleMakingSheep(){
+sheepButton.addEventListener('click', handleMakingSheep ()) ;
+
 
   // TODO: make a new list item, assign its text content to `Sheep` or the name of a sheep you know, and append it to the third unordered list.
-
+  const newSheep = document.createElement('li');
+  newSheep.textContent = 'Sheep';
+  const sheeps = document.getElementById('sheeps')
+  sheeps.appendChild(newSheep)
 }
 
 // TODO: create an event listener for the `Make Horse` Button that calls a function named `handleMakingHorse`
