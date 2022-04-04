@@ -25,4 +25,10 @@ ul {
 }
 li {
 text-align: center;
+font-size:larger;
+}
+footer{
+    background-color: #D7FACD;
+    border: solid 2px balck;
+    margin-top: 1%;
 }
