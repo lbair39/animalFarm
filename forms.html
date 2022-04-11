@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="forms.css">
+  <link rel="stylesheet" href="style.css">
   <title>DOM Forms</title>
 </head>
 <body>
   <form id="myForm">
-     <fieldset>
+   <fieldset id="First"> 
       <label for="email">EMAIL:</label>
       <input type="email" id="email" value="yourname@yourEmail.com">
       <label for="password">Password:</label>
@@ -20,9 +20,9 @@
       <label for="title">Title: </label>
       <input type="text" id="title">
       <label id="descriptLabel" for="info">Description:</label>
-      <input type="text" id="description"></input>
-      <input type="submit" id="submitButtonTwo">
-    </fieldset>
+      <input type="text" id="description" name="info"></input>
+      <input type="submit">
+    </fieldset> 
   </form>
   <div id="render">
 
